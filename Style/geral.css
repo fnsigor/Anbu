@@ -1,0 +1,543 @@
+/*reset css*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+
+
+
+
+/*definindo posições grid*/
+body{
+    display: grid;
+    grid-template-areas: 
+    "header header"
+    "main aside"
+    "footer footer"
+    ;
+    grid-template-columns: 75vw auto;
+    grid-template-rows: auto auto auto;
+    
+    color:#FFF2F9;
+    font-family: 'Roboto', sans-serif;
+
+
+}
+
+main{
+    grid-area: main;
+    background-color: #FDEBF7;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 30px;
+    
+}
+
+aside{
+    grid-area: aside;
+    background-color: #FDEBF7;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 30px;
+}
+
+header{
+    background-color: #323232;
+    grid-area: header;
+}
+
+footer{
+    grid-area: footer;
+    background-color: #323232;
+}
+
+
+
+
+
+
+/*header*/
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 60px;
+}
+
+h1 a{
+    font-weight: 900;
+    font-style: italic;
+    font-size: 60px;
+    color: #FA4EAB;
+    text-shadow: 1px 3px 5px rgba(0, 0, 0, 2);
+}
+
+header ul{
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+.nav-links{
+    display: flex;
+    align-items: center;
+    
+    font-weight: 500;
+    font-size: 25px;
+}
+
+.nav-links img{
+    height: 35px;
+    margin-left: 5px;
+}
+
+.bt-search{
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+}
+
+.nav-links a{
+    color: #FA4EAB;
+}
+
+.nav-links input{
+    width: 220px;
+    height: 30px;
+    border-radius: 20px;
+    border: 0.1px solid #FA4EAB;
+    outline: none;
+    padding: 5px;
+
+    font-style: italic;
+    font-size: 16px;
+}
+
+
+
+
+
+/*main-lancamento*/
+.div-lancamentos{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+
+}
+
+.figure-lancamento{
+    width: 8vw;
+    height: 23vh;
+    margin: 15px 0;
+}
+
+.container-lancameto{
+    background-color: #323232;
+    text-align: center;
+}
+
+
+
+
+
+
+/*main-populares*/
+.section-pop{
+    text-align: center;
+    background-color: #323232;
+    flex-grow: 1;
+}
+
+.figure-pop{
+    width: 12vw;
+    height: 35vh;
+}
+
+.div-pop{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    padding-top: 25px;
+    margin-bottom: 45px;
+}
+
+
+
+
+
+
+
+
+/*aside-historico*/
+.section-hist{
+    background-color: #323232;
+    text-align: center;
+
+}
+
+.bloco-historico{
+    background-color: #8A8888;
+    border-radius: 10px;
+    margin: 25px auto;
+    width: 95%;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    padding:  0 .5vw;
+    gap: .9vw;
+}
+
+.bloco-historico img{
+    height: 90%;
+    
+}
+
+.descricao{
+    display: flex;
+    flex-direction: column;
+    gap: .2vh;
+    align-items: flex-start;
+    text-align: start;
+}
+
+
+
+
+/*aside favoritos*/
+.section-fav{
+    background-color: #323232;
+    border: 1px solid;
+    text-align: center;
+    flex-grow: 1;
+    
+}
+
+.container-fav{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.figure-fav{
+    width: 7vw;
+    height: 21vh;
+    margin: 30px 17px;
+}
+
+.figure-fav figcaption{
+    font-size: 14px;
+    font-weight: 400;
+}
+
+
+
+
+
+
+
+
+/*footer*/
+.footer-discord{
+    background-color: #5463FF;
+    height: 7vh;
+}
+
+.footer-discord a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: max-content;
+    margin: 0 auto;
+    gap: 10px;
+
+    font-size: 20px;
+    font-weight: 400;
+    text-shadow: 1px 3px 10px rgba(0, 0, 0, 2);
+}
+
+.footer-parceiros ul{
+    display: flex;
+    justify-content: center;
+    
+    
+}
+
+.footer-parceiros h4{
+    text-align: center;
+    padding-top: 20px;
+    margin-bottom: 25px;
+    font-size: 25px;
+    font-weight: 400;
+    text-shadow: 1px 3px 5px rgba(0, 0, 0, 2);
+}
+
+.desenvolvido{
+    text-align: center;
+    margin-top: 30px;
+    padding-bottom: 5px;
+    text-align: end;
+    padding-right: 25px;
+
+    font-size: 15px;
+}
+
+.parceiros-links{
+    font-size: 20px;
+    font-weight: 400;
+}
+
+
+
+#xxx{
+    filter: invert(100%);
+}
+
+
+
+/*estilização geral - elementos que aparecem varias vezes*/
+
+.section-pop, .section-fav, .section-hist, .container-lancameto{
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.btVejaMais{
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 20px;
+    padding: 5px;
+    background-color: #FFD32D;
+    margin: 10px auto;
+    border: none;
+}
+
+.btVejaMais a{
+    color: #323232;
+}
+
+figcaption{
+    margin-top: 2px;
+    text-align: center;
+    line-height: 1;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+a{
+    color: #FDEBF7 ;
+}
+
+.sub-header{
+    background-color: #FA4EAB;
+    font-size: 20px;
+    font-weight: 400;
+    padding: 8px;
+    text-align: center;
+    width: 100%;
+    text-shadow: 1px 3px 5px rgba(0, 0, 0, 2);
+    font-weight: 500;
+
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+img{
+    border-radius: 10px;
+}
+
+.figure-fav img, .figure-pop img, .figure-lancamento img{
+    width: 100%;
+    height: 95%;
+}
+
+.container-lancameto .btVejaMais, .section-pop .btVejaMais{
+    margin-top: 30px;
+}
+
+footer ul{
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+.icon-flutuante{
+    filter: invert(100%);
+    width: 28px;
+    height: 28px;
+}
+
+.navegacao-flutuante{
+    position:fixed;
+    z-index: 3;
+    right: 5px;
+    bottom: 5px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
+}
+
+.navegacao-flutuante > a {
+    background-color: #FA4EAB;
+    clip-path: circle(50% at 50% 50%);
+    
+    padding: 5px;
+    width: 40px;
+    height: 40px;
+}
+
+
+
+
+
+
+
+/*efeitos*/
+/*header*/
+.nav-links a:hover{
+    color: #FFD32D;
+    text-shadow: 1px 3px 5px rgba(0, 0, 0, 2);
+}
+
+.bt-search:hover{
+    cursor: pointer;
+}
+
+.nav-links input:focus{
+    background-color: #FDEBF7;
+    padding: 10px;
+}
+
+/*figure anime*/
+.div-lancamentos a:hover, .div-pop a:hover, .container-fav a:hover{
+    text-shadow: 1px 3px 5px rgba(0, 0, 0, 2);
+    color: #FFD32D;
+}
+
+/*historico*/
+/*perguntar p professor como mudar mais de um elemento filho ao passar o mouse por cima do elemento pai
+pra imagem aumentar e aplicar text shadow so de passar o mouse no bloco cinza*/
+.bloco-historico:hover{
+    text-shadow: 1px 3px 5px rgba(0, 0, 0, 2);
+    color: #FA4EAB;
+}
+
+
+/*botao*/
+.btVejaMais:hover{
+    background-color: #FA4EAB;
+    font-weight: 700;
+    box-shadow: 1px 3px 5px rgba(0, 0, 0, 2);
+}
+
+/*parceiros*/
+.lista-parceiros li:nth-of-type(1) a:hover{
+    color: #5A2E98;
+    text-shadow: 1px 3px 5px rgba(0, 0, 0, 2);
+}
+.lista-parceiros li:nth-of-type(2) a:hover{
+    color: #21D3FF;
+    text-shadow: 1px 3px 5px rgba(0, 0, 0, 2);
+}
+.lista-parceiros li:nth-of-type(3) a:hover{
+    color: #CD2026;
+    text-shadow: 1px 3px 5px rgba(0, 0, 0, 2);
+}   
+.lista-parceiros li:nth-of-type(4) a:hover{
+    color: #888484;
+    text-shadow: 1px 3px 5px rgba(0, 0, 0, 2);
+}
+
+/*dev*/
+.desenvolvido a:hover{
+    color: #FA4EAB;
+    text-shadow: 1px 3px 5px rgba(0, 0, 0, 2);
+}
+
+
+
+
+
+
+
+
+
+
+/*imagens de fundo*/
+.footer-parceiros{
+    position: relative;
+}
+
+.footer-parceiros h4, .footer-parceiros ul, .footer-parceiros .desenvolvido{
+    position: relative;
+    z-index: 2;
+} 
+
+.footer-parceiros:before{
+    content: ' ';
+    position: absolute;
+
+    width: 100%;
+    height: 100%;
+
+    opacity: .7;
+
+    background: url("../Images/background-darkness.png") no-repeat 30% 0, url("../Images/background-megumin-2.png") no-repeat 70% 0;
+    background-size: contain;
+}
+
+
+
+.footer-parceiros{
+    position: relative;
+}
+
+.footer-parceiros h4, .footer-parceiros ul, .footer-parceiros .desenvolvido{
+    position: relative;
+    z-index: 2;
+} 
+
+.footer-parceiros:before{
+    content: ' ';
+    position: absolute;
+
+    width: 100%;
+    height: 100%;
+
+    opacity: .7;
+
+    background: url("../Images/background-darkness.png") no-repeat 25% 0, url("../Images/background-megumin-2.png") no-repeat 75% 0;
+    background-size: contain;
+}
+
+
+
+header{
+    position: relative;
+}
+
+header h1, header nav{
+    position: relative;
+    z-index: 2;
+}
+
+header:before{
+    content: ' ';
+    position: absolute;
+
+    width: 90%;
+    height: 100%;
+
+    background: url("../Images/ambuGirl.png") no-repeat 10% 0;
+    background-size: contain;
+}
+
+
