@@ -506,7 +506,7 @@ img{
     color: #323232;
 }
 
-.section-anime, .section-episodios, .container-similiares, .container-eps{
+.section-anime, .section-episodios, .container-similiares, .section-player{
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
     border-bottom-left-radius: 10px;
