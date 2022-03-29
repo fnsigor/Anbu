@@ -347,7 +347,7 @@ img{
     position:fixed;
     z-index: 3;
     right: 5px;
-    bottom: 5px;
+    bottom: 25px;
 
     display: flex;
     flex-direction: column;
@@ -361,6 +361,10 @@ img{
     padding: 5px;
     width: 40px;
     height: 40px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 
