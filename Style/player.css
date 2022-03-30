@@ -572,9 +572,12 @@ img{
 
 
 .figure-similiares:hover{
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 2);
     color: #FFD32D;
 }
-.figure-episodios:hover:hover{
+
+.figure-episodios:hover{
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 2);
     color: #FA4EAB;
 }
 
