@@ -426,12 +426,13 @@ footer ul{
     color: #FFD32D;
 }
 
-/*historico*/
-/*perguntar p professor como mudar mais de um elemento filho ao passar o mouse por cima do elemento pai
-pra imagem aumentar e aplicar text shadow so de passar o mouse no bloco cinza*/
 .bloco-historico:hover{
+    box-shadow: 3px 3px 8px #FA4EABAA;
+}
+
+.bloco-historico:hover .ep-hist{
+    color: #FFD32D;
     text-shadow: 1px 3px 5px rgba(0, 0, 0, 2);
-    color: #FA4EAB;
 }
 
 
