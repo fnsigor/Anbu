@@ -22,7 +22,8 @@ body{
     color:#FFF2F9;
     font-family: 'Roboto', sans-serif;
     grid-template-columns: 100%;
-
+    
+    background-color: #323232;
 }
 
 main{
