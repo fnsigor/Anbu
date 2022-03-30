@@ -560,6 +560,7 @@ img{
 
 .figure-destaque:hover, .figure-similiares:hover{
     color: #FFD32D;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 2);
 }
 
 
