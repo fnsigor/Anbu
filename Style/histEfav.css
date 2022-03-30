@@ -495,13 +495,6 @@ img{
 
 
 /*historico*/
-/*perguntar p professor como mudar mais de um elemento filho ao passar o mouse por cima do elemento pai
-pra imagem aumentar e aplicar text shadow so de passar o mouse no bloco cinza*/
-.bloco-historico:hover{
-    text-shadow: 1px 3px 5px rgba(0, 0, 0, 2);
-    color: #FA4EAB;
-}
-
 
 /*botao*/
 .btVejaMais:hover{
@@ -533,13 +526,13 @@ pra imagem aumentar e aplicar text shadow so de passar o mouse no bloco cinza*/
     text-shadow: 1px 3px 5px rgba(0, 0, 0, 2);
 }
 
-.bloco-anime-historico:hover{
-    color: #FA4EAB ;
-    text-shadow: 1px 3px 5px rgba(0, 0, 0, 2);
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 2);
-}
-.bloco-anime-favoritos:hover{
+.bloco-anime-favoritos:hover, .bloco-anime-historico:hover{
     box-shadow: 7px 7px 15px #FA4EABAA;
+}
+
+.bloco-anime-historico:hover .hist-eps{
+    color: #FFD32D;
+    text-shadow: 1px 3px 5px rgba(0, 0, 0, 2);
 }
 
 .status-lancamento{
