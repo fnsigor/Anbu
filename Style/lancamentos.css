@@ -103,7 +103,7 @@ header ul{
     border-radius: 20px;
     border: 0.1px solid #FA4EAB;
     outline: none;
-    padding: 5px;
+    padding: 10px;
 
     font-style: italic;
     font-size: 16px;
@@ -427,7 +427,6 @@ img{
 
 .nav-links input:focus{
     background-color: #FDEBF7;
-    padding: 10px;
 }
 
 
