@@ -102,7 +102,7 @@ header ul{
     border-radius: 20px;
     border: 0.1px solid #FA4EAB;
     outline: none;
-    padding: 5px;
+    padding: 10px;
 
     font-style: italic;
     font-size: 16px;
@@ -369,7 +369,6 @@ footer ul{
 
 .nav-links input:focus{
     background-color: #FDEBF7;
-    padding: 10px;
 }
 
 /*figure anime*/
@@ -378,9 +377,7 @@ footer ul{
     color: #FFD32D;
 }
 
-/*historico*/
-/*perguntar p professor como mudar mais de um elemento filho ao passar o mouse por cima do elemento pai
-pra imagem aumentar e aplicar text shadow so de passar o mouse no bloco cinza*/
+
 .bloco-historico:hover{
     text-shadow: 1px 3px 5px rgba(0, 0, 0, 2);
     color: #FA4EAB;
