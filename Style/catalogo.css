@@ -232,16 +232,16 @@ header ul{
     color: #323232;
 }
 
-::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+.section-filtro ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
     color: #FFF;
     opacity: 1; /* Firefox */
 }
 
-:-ms-input-placeholder { /* Internet Explorer 10-11 */
+.section-filtro :-ms-input-placeholder { /* Internet Explorer 10-11 */
     color: #FFF;
 }
 
-::-ms-input-placeholder { /* Microsoft Edge */
+.section-filtro ::-ms-input-placeholder { /* Microsoft Edge */
     color: #FFF;
 }
 
